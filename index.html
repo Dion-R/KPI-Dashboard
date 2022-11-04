@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c77f7777e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body class="d-flex align-items-center">
+    <div class="container">
+      <a href="./login.html" class="mb-2"><i class="fa-solid fa-chevron-left"></i></a>
+      <div class="row gy-4">
+        <div class="col-12">
+          <div class="heading">
+            <h1 class="text-white mb-0">Good Afternoon Dion</h1>
+            <p class="text-white mb-0">Here is your KPI Report</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0 justBudget">
+            <div class="card-header text-center border-0 bg-transparent">
+              <h4 class="text-white mb-0">Just Budget</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center gy-3 gx-3">
+                <div class="col-4 mt-0">
+                  <div class="card border-0 h-100">
+                    <div class="card-header">
+                      <p class="mb-0">Converted Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbConverted">15</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Active Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbActive">12</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Dead Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbDead"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Current Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbLevel">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Next Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbNextLevel">32</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0" id="jbCommissionTitle">
+                        Accrued Comission
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="jbCommission">$360.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="link" href="./justBudget.html"></a>
+          </div>
+        </div>
+        <!-- <div class="col-6">
+          <div class="card border-0 debtApplication">
+            <div class="card-header text-center border-0 bg-transparent">
+              <h4 class="text-white mb-0">Debt Application</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center gy-3 gx-3">
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Converted Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daConverted">15</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Active Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daActive">12</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Dead Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daDead">3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Current Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daLevel">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Next Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daNextLevel">32</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0" id="daCommissionTitle">
+                        Accrued Comission
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="daCommission">$360.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="link" href="./debtApplication.html"></a>
+          </div>
+        </div> -->
+        <!-- <div class="col-6">
+          <div class="card border-0 cleanCredit">
+            <div class="card-header text-center border-0 bg-transparent">
+              <h4 class="text-white mb-0">Clean Credit</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center gy-3 gx-3">
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Converted Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccConverted">15</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Active Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccActive">12</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Dead Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccDead">3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Current Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccLevel">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Next Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccNextLevel">32</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0" id="ccCommissionTitle">
+                        Accrued Comission
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="ccCommission">$360.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="link" href="./cleanCredit.html"></a>
+          </div>
+        </div> -->
+        <div class="col-6">
+          <div class="card border-0 refinance">
+            <div class="card-header text-center border-0 bg-transparent">
+              <h4 class="text-white mb-0">Refinance</h4>
+            </div>
+            <div class="card-body">
+              <div class="row text-center gy-3 gx-3">
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Converted Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfConverted">15</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Active Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfActive">12</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 mt-0">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Dead Leads</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfDead">3</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Current Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfLevel">0</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0">Next Level</p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfNextLevel">32</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card h-100 border-0">
+                    <div class="card-header">
+                      <p class="mb-0" id="rfCommissionTitle">
+                        Accrued Comission
+                      </p>
+                    </div>
+                    <div class="card-body">
+                      <p class="mb-0" id="rfCommission">$360.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="link" href="./refinance.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c77f7777e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/leads.css" />
+    <title>just Budget KPI</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <h1 class="text-white mb-0 company" id="refinance">Refinance</h1>
+          <p class="text-white mb-0">Comission Report</p>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <div class="card-header">Current Level</div>
+            <div class="card-body" id="currentLevel">0</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <div class="card-header">Active Leads</div>
+            <div class="card-body" id="activeLeads">32</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <div class="card-header" id="leadsUntilHeading">Leads until Level 1</div>
+            <div class="card-body" id="leadsUntil">12</div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex mt-3">
+        <p class="p-2 tabs mb-0 selected" id="all">Converted Leads</p>
+        <p class="p-2 tabs mb-0" id="Active">Active Leads</p>
+        <p class="p-2 tabs mb-0" id="Dead">Dead Leads</p>
+      </div>
+      <div class="d-grid leadHeader bg-white p-2">
+        <p class="mb-0">Name</p>
+        <p class="mb-0">Conversion Date</p>
+        <p class="mb-0">File Status</p>
+        <p class="mb-0">Health</p>
+        <p class="mb-0">Progress</p>
+        <p class="mb-0">Commission</p>
+      </div>
+      <div class="leadContainer mb-3">
+      </div>
+       <div id="commission">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 id="commissionPayableTitle">Comission Payable</h3>
+                </div>
+                <div class="card-body" id="comissionPayable">
+                    $3452.00
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/subApp.js"></script>
+  </body>
+</html>

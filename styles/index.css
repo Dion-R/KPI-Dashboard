@@ -1,0 +1,50 @@
+.justBudget {
+  background-color: #09365b;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+.justBudget:hover {
+  transform: scale(1.02);
+}
+
+.debtApplication {
+  background-color: #edc124;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.debtApplication:hover {
+  transform: scale(1.02);
+}
+.cleanCredit {
+  background-color: #6ec1e4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cleanCredit:hover {
+  transform: scale(1.02);
+}
+.refinance {
+  background-color: #bdd631;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.refinance:hover {
+  transform: scale(1.02);
+}
+.card {
+  position: relative;
+}
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.alert1{
+  color: red;
+}
+.fa-chevron-left {
+  color: #FFFFFF;
+  display: block;
+}

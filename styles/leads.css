@@ -1,0 +1,23 @@
+.tabs {
+  border-radius: 0.375rem 0.375rem 0 0;
+  cursor: pointer;
+ background-color: bisque;
+}
+.selected {
+    border-bottom: none;
+    background-color: white;
+}
+.leadHeader {
+  grid-template-columns: repeat(6, 1fr);
+  border-radius: 0 0.375rem 0 0;
+}
+.individualLead {
+    grid-template-columns: repeat(6, 1fr);
+}
+.leadContainer {
+height: 400px;
+overflow: scroll;
+scroll-behavior: smooth;
+border-radius: 0 0 0.375rem 0.375rem;
+background-color: #FFFFFF;
+}
