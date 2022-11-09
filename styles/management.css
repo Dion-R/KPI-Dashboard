@@ -14,7 +14,7 @@ input:focus::placeholder {
 .pointer {
   cursor: pointer;
 }
-.background {
+#darkBackground {
   background-color: black;
   opacity: 0.7;
   position: absolute;
@@ -24,17 +24,18 @@ input:focus::placeholder {
   height: 100%;
   z-index: 1;
 }
-.levelModalPopUp {
+#levelModal {
   width: 400px;
+  height: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 2000;
   border-radius: 0.25rem;
 }
-.staffModalPopUp {
+#staffModal {
   width: 400px;
   position: absolute;
   top: 50%;
@@ -47,10 +48,6 @@ input:focus::placeholder {
 .level {
   background-color: #ffffff;
 }
-.modalInput:focus {
-  border: 1px solid #ffffff !important;
-  outline: 2px solid var(--bs-blue) !important;
-}
 .fa-rectangle-xmark {
   font-size: 1.5rem;
   cursor: pointer;
@@ -59,6 +56,12 @@ input:focus::placeholder {
   cursor: pointer;
 }
 .alert {
-    padding:0; 
-    color: red;
+  padding: 0;
+  color: red;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn:active:focus {
+  box-shadow: none;
 }
